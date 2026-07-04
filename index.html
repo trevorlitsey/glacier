@@ -223,6 +223,17 @@
   .prow.ptot{background:var(--paper-2);font-weight:600;border-top:2px solid var(--ink);}
   .pricenote{font-size:12.5px;opacity:.78;margin:10px 0 0;line-height:1.55;}
 
+  /* ---------- Route photos ---------- */
+  .photogrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:560px){.photogrid{grid-template-columns:1fr;}}
+  .routephoto{margin:0;border:2px solid var(--ink);background:var(--paper-2);}
+  .routephoto.wide{grid-column:1 / -1;}
+  .routephoto img{display:block;width:100%;height:210px;object-fit:cover;background:var(--paper-2);}
+  .routephoto.wide img{height:260px;}
+  .routephoto figcaption{border-top:2px solid var(--ink);padding:9px 11px;font-size:12.5px;line-height:1.45;}
+  .routephoto b{display:block;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:3px;color:var(--blue);}
+  .routephoto a{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.68;}
+
   /* ---------- Map ---------- */
   .mapwrap{border:2px solid var(--ink);}
   #map{height:380px;width:100%;background:var(--paper-2);}
@@ -233,7 +244,13 @@
   .leaflet-container{font-family:'Jost',sans-serif;}
   .leaflet-tooltip.start-tip{background:var(--ink);color:var(--paper);border:none;border-radius:0;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.1em;padding:3px 7px;box-shadow:0 1px 4px rgba(0,0,0,.35);}
   .leaflet-tooltip.start-tip:before{border-top-color:var(--ink);}
+  .leaflet-tooltip.camp-tip{background:var(--paper-2);color:var(--ink);border:2px solid var(--ink);border-radius:0;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;box-shadow:0 1px 4px rgba(0,0,0,.25);}
+  .leaflet-tooltip.camp-tip:before{display:none;}
+  .leaflet-tooltip.alt-tip{background:rgba(239,235,224,.94);color:var(--ink);border:1.5px dashed var(--ink);border-radius:0;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;box-shadow:none;}
+  .leaflet-tooltip.alt-tip:before{display:none;}
   .maplegend i.startswatch{background:#EFEBE0;border:3px solid var(--ink);}
+  .maplegend i.routeswatch{background:var(--ink);height:4px;border:0;}
+  .maplegend i.altcamp{background:transparent;border:2px dashed var(--ink);}
 
   /* ---------- Weather ---------- */
   .wlede{font-size:15px;margin:0 0 16px;}
@@ -282,23 +299,23 @@
   <!-- PITCH -->
   <section class="pitch">
     <div class="shead"><span class="k">◆</span><h2>Overview</h2><span class="rule"></span></div>
-    <p class="pintro">The trip I want you in on: a self-supported gravel loop from Whitefish — over Red Meadow Pass, through Glacier's North Fork, back to town. Three nights out, camping the whole way.</p>
+    <p class="pintro">A self-supported gravel loop from Whitefish — over Red Meadow Pass, through Glacier's North Fork, back to town. Three nights out, FCFS camping each night.</p>
     <div class="pgrid">
       <div class="pcard">
         <div class="pt">The effort</div>
-        <p>~116 mi, +7,600 ft over 3.5 days. Short Friday, then 35–50 mi gravel days, one 5,600 ft pass, a rough hiker/biker stretch. Fit-cyclist territory — doable if you ride.</p>
+        <p>~116 mi, +7,600 ft over 3.5 days. Short Friday, then 35–50 mi gravel days, one 5,600 ft pass, a rough hiker/biker stretch.</p>
       </div>
       <div class="pcard">
         <div class="pt">The commitment</div>
-        <p>No cell service, dispersed camping, real grizzly country. Warm days, near-freezing nights up high. Payoff: solitude, Polebridge bear claws, alpine lakes, a Lake McDonald swim.</p>
+        <p>No cell service, dispersed camping, grizzly country. Warm days, near-freezing nights up high. solitude, Polebridge bear claws, alpine lakes, a Lake McDonald swim.</p>
       </div>
       <div class="pcard">
         <div class="pt">Getting there &amp; gear</div>
-        <p>You're on my flight (Delta 2575, MSP → Kalispell). Bike, bags, bear spray all rent in Whitefish (below). Bring riding kit, layers, a shell. I've got the Monday hotel — crash with me, fly home Tuesday.</p>
+        <p>Delta 2575, MSP → Kalispell. Bike + bags rent in Whitefish; bear spray we buy locally before rolling. Bring riding kit, layers, a shell. Monday hotel included from my work before you fly back Tuesday.</p>
       </div>
       <div class="pcard">
         <div class="pt">Ballpark cost</div>
-        <p>Flight ~$300–550 · bike + bags ~$300–400 · camp gear ~$100–150 · food ~$100–150. Monday hotel's my room. <b>~$700–1,100 all-in.</b></p>
+        <p>Bike + bags are roughly $275 for four rental days before bear spray, food, and misc gear.</p>
       </div>
     </div>
     <div class="ptags">
@@ -321,14 +338,14 @@
       </figure>
     </div>
     <div class="pricetable">
-      <div class="prow phead"><span>Rental &#183; per rider</span><span>Est. rate</span></div>
-      <div class="prow"><span>Kona Unit-X</span><span>~$65 / day</span></div>
-      <div class="prow"><span>Revelate bag suite</span><span>~$30 / day</span></div>
-      <div class="prow"><span>Bear spray</span><span>rent ~$15 &#183; buy ~$50</span></div>
-      <div class="prow"><span>Helmet + pedals</span><span>included</span></div>
-      <div class="prow ptot"><span>&#8776; 4 rental days (Fri &#8594; Mon, closed Sun)</span><span>~$300&#8211;400 / rider</span></div>
+      <div class="prow phead"><span>Bike rental + gear &#183; per rider</span><span>Est. rate</span></div>
+      <div class="prow"><span>Kona Unit-X</span><span>$65 first day · $50 add'l days</span></div>
+      <div class="prow"><span>Revelate bag suite</span><span>~$30 first day · ~$10 add'l days</span></div>
+      <div class="prow"><span>Bear spray</span><span>buy locally · cannot fly</span></div>
+      <div class="prow"><span>Helmet</span><span>bring our own</span></div>
+      <div class="prow ptot"><span>&#8776; 4 rental days (Fri &#8594; Mon, closed Sun)</span><span>bike + bags ~$275 / rider</span></div>
     </div>
-    <p class="pricenote">Photos + spec: Glacier Cyclery. Rates are my estimates — confirm at booking (406.862.6446). Closed Sundays, so we pick up Friday, return Monday. Reserve early.</p>
+    <p class="pricenote">Photos + spec: Glacier Cyclery. Rates usually price the first day higher and add-on days lower — confirm exact bike and bag pricing at booking (406.862.6446). Closed Sundays, so we pick up Friday, return Monday. Bear spray is separate: buy it in town because it cannot fly.</p>
   </section>
 
   <!-- MAP -->
@@ -337,11 +354,38 @@
     <div class="mapwrap"><div id="map"></div></div>
     <div class="maplegend">
       <span><i class="startswatch"></i>Start / Finish</span>
-      <span><i style="background:#234A87"></i>Day 1</span>
-      <span><i style="background:#CE3B22"></i>Day 2</span>
-      <span><i style="background:#17160F"></i>Day 3</span>
-      <span><i style="background:#E6B33C"></i>Day 4</span>
-      <span class="note">The actual ~121 mi gravel route. GPX on Ride with GPS ("Glacier National Park Gravel Loop, Whitefish").</span>
+      <span><i class="routeswatch" style="background:#234A87"></i>In Glacier NP</span>
+      <span><i class="routeswatch" style="background:#8D8572"></i>Outside park</span>
+      <span><i style="background:#CE3B22"></i>Main camp</span>
+      <span><i class="altcamp"></i>Backup camp</span>
+      <span class="note">Park boundary split is approximate: Polebridge entrance into Glacier, then out near West Glacier.</span>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section>
+    <div class="shead"><span class="k">▣</span><h2>Route Photos</h2><span class="rule"></span></div>
+    <div class="photogrid">
+      <figure class="routephoto wide">
+        <img loading="lazy" src="https://bikepacking.com/wp-content/uploads/2016/07/red-meadow-100-montana_01.jpg" alt="Loaded bike on gravel road along the Red Meadow Pass Loop">
+        <figcaption><b>Red Meadow Pass Loop</b>Loaded gravel riding on the Whitefish Range side of the loop. <a href="https://bikepacking.com/routes/red-meadow-pass/" target="_blank" rel="noopener">Bikepacking.com</a></figcaption>
+      </figure>
+      <figure class="routephoto">
+        <img loading="lazy" src="https://bikepacking.com/wp-content/uploads/2016/07/red-meadow-100-bikepacking-montana_8192.jpg" alt="Bikepacking on forest road near Red Meadow Pass">
+        <figcaption><b>Forest road miles</b>The non-park side: dirt, trees, and the climb toward Red Meadow Pass. <a href="https://bikepacking.com/routes/red-meadow-pass/" target="_blank" rel="noopener">Bikepacking.com</a></figcaption>
+      </figure>
+      <figure class="routephoto">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Polebridge_MT.JPG/640px-Polebridge_MT.JPG" alt="Polebridge Mercantile in Polebridge Montana">
+        <figcaption><b>Polebridge</b>Bear claw stop before rolling into Glacier's North Fork. <a href="https://en.wikipedia.org/wiki/Polebridge,_Montana" target="_blank" rel="noopener">Wikimedia</a></figcaption>
+      </figure>
+      <figure class="routephoto">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bowman_Lake.jpg/640px-Bowman_Lake.jpg" alt="Bowman Lake in Glacier National Park">
+        <figcaption><b>Bowman Lake</b>Night 2 camp target inside Glacier National Park. <a href="https://en.wikipedia.org/wiki/Bowman_Lake_(Montana)" target="_blank" rel="noopener">Wikimedia</a></figcaption>
+      </figure>
+      <figure class="routephoto">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lake_McDonald_winter.jpg/640px-Lake_McDonald_winter.jpg" alt="Lake McDonald in Glacier National Park">
+        <figcaption><b>Lake McDonald</b>The Day 3 drop through Glacier ends around Apgar / West Glacier. <a href="https://en.wikipedia.org/wiki/Lake_McDonald" target="_blank" rel="noopener">Wikimedia</a></figcaption>
+      </figure>
     </div>
   </section>
 
@@ -376,7 +420,7 @@
       <div class="num">1</div>
       <div class="body">
         <div class="top"><span class="dow">Friday Jul 31</span><span class="mi">~10–14 mi</span><span class="tag">Short opener</span></div>
-        <p><b>Land 2:33 PM</b> → Whitefish ~3:30 → pick up bikes, bags, bear spray before Glacier Cyclery's <b>6 PM close</b>. Fuel up, roll ~5 PM.</p>
+        <p><b>Land 2:33 PM</b> → Whitefish ~3:30 → pick up bikes + bags before Glacier Cyclery's <b>6 PM close</b>, buy bear spray in town, fuel up, roll ~5 PM.</p>
         <p class="warnline">⚠ The 6 PM pickup is the tight link (this flight runs late a lot). Land past ~5 and we take a town night, start fresh Saturday.</p>
         <div class="camp"><b>Camp · free</b>First legal dispersed pullout up the Red Meadow Rd corridor (NF land). Sunset ~9:10, plenty of light. I'll get the exact spot from the shop.</div>
       </div>
@@ -396,7 +440,7 @@
       <div class="body">
         <div class="top"><span class="dow">Sunday Aug 2</span><span class="mi">~35–40 mi</span><span class="tag">Inside North Fork</span></div>
         <p>~20 mi of hiker/biker-only dirt through Glacier — grizzly country — down to Lake McDonald. Swim at Apgar.</p>
-        <div class="camp"><b>Camp</b>Hiker/biker site — Sprague Creek or Apgar · or Blankenship Bridge</div>
+        <div class="camp"><b>Camp</b>West Glacier area · backups: Sprague Creek, Apgar, or Blankenship Bridge</div>
       </div>
     </div>
 
@@ -442,7 +486,7 @@
     <div class="shead"><span class="k">i</span><h2>Know Before You Go</h2><span class="rule"></span></div>
     <div class="facts">
       <div class="fact"><div class="ft">Camping</div><p>All first-come — no reservations anywhere. Hiker/biker sites rarely fill.</p></div>
-      <div class="fact"><div class="ft">Park entry</div><p>Need a Glacier entrance pass. Vehicle reservations don't apply to cyclists.</p></div>
+      <div class="fact"><div class="ft">Park entry</div><p>No vehicle reservations required anywhere in 2026. Cyclists still need a Glacier entrance pass: $20/person, valid 7 days.</p></div>
       <div class="fact"><div class="ft">Fire</div><p>August fire bans are common — plan no-cook or a canister stove.</p></div>
       <div class="fact"><div class="ft">Bears</div><p>Grizzly country. Carry spray, make noise on blind corners.</p></div>
     </div>
@@ -453,8 +497,8 @@
     <div class="shead"><span class="k">&#10003;</span><h2>Two Non-Negotiables</h2><span class="rule"></span></div>
     <p style="font-size:15px;margin:0 0 14px;">Full packing list's coming separately. Two things we must have — neither can fly:</p>
     <div class="facts">
-      <div class="fact"><div class="ft" style="color:var(--red)">Bear spray</div><p>Rent it at Glacier Cyclery. Banned on planes, so we get it there.</p></div>
-      <div class="fact"><div class="ft" style="color:var(--red)">Food storage</div><p>Ursack or canister — required in Glacier. One shared between us works if we pack smart.</p></div>
+      <div class="fact"><div class="ft" style="color:var(--red)">Bear spray</div><p>Buy it in Whitefish/Kalispell before rolling. Banned on planes, so we get it there.</p></div>
+      <div class="fact"><div class="ft" style="color:var(--red)">Food storage</div><p>Ursack or canister — required in Glacier. One shared between us works hopefully?</p></div>
     </div>
     <div class="callout" style="margin-top:14px;">
       <div class="h">Also can't fly</div>
@@ -479,19 +523,49 @@
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
       maxZoom:17, attribution:'&copy; OpenStreetMap contributors'
     }).addTo(map);
-    var line = L.polyline(pts,{color:'#17160F',weight:3,opacity:.9}).addTo(map);
-    var nodes = [
-      {ll:[48.62,-114.55],     c:'#234A87', t:'Day 1 camp — Flathead NF (Whitefish Range)'},
-      {ll:[48.80,-114.47],     c:'#CE3B22', t:'Red Meadow Pass — 5,600 ft'},
-      {ll:[48.7836,-114.2803], c:'#CE3B22', t:'Polebridge — bear claw stop'},
-      {ll:[48.8275,-114.2017], c:'#CE3B22', t:'Day 2 camp — Bowman Lake'},
-      {ll:[48.5328,-113.9890], c:'#17160F', t:'Day 3 camp — Lake McDonald / Apgar'},
-      {ll:[48.4956,-113.9869], c:'#E6B33C', t:'West Glacier'},
-      {ll:[48.3725,-114.1817], c:'#E6B33C', t:'Columbia Falls'}
+    function nearestIndex(target){
+      var best = 0;
+      var bestDist = Infinity;
+      pts.forEach(function(p, i){
+        var dLat = p[0] - target[0];
+        var dLng = p[1] - target[1];
+        var dist = dLat * dLat + dLng * dLng;
+        if(dist < bestDist){
+          best = i;
+          bestDist = dist;
+        }
+      });
+      return best;
+    }
+    var parkStart = nearestIndex([48.7836,-114.2803]);
+    var parkEnd = nearestIndex([48.4956,-113.9869]);
+    var outsideStyle = {color:'#8D8572',weight:4,opacity:.78};
+    var parkStyle = {color:'#234A87',weight:6,opacity:.95};
+    L.polyline(pts.slice(0, parkStart + 1), outsideStyle).addTo(map).bindPopup('Outside Glacier National Park');
+    L.polyline(pts.slice(parkStart, parkEnd + 1), parkStyle).addTo(map).bindPopup('Inside Glacier National Park');
+    L.polyline(pts.slice(parkEnd), outsideStyle).addTo(map).bindPopup('Outside Glacier National Park');
+    var line = L.polyline(pts,{color:'#17160F',weight:1,opacity:0});
+    var mainCamps = [
+      {ll:[48.62,-114.55],     c:'#234A87', label:'Night 1', t:'Night 1 camp — Flathead NF (outside park)'},
+      {ll:[48.8275,-114.2017], c:'#CE3B22', label:'Night 2 · Bowman Lake', t:'Camp Night 2 — Bowman Lake (inside Glacier NP)'},
+      {ll:[48.4956,-113.9869], c:'#CE3B22', label:'Night 3 · West Glacier', t:'Camp Night 3 — West Glacier area (outside park)'}
     ];
-    nodes.forEach(function(n){
-      L.circleMarker(n.ll,{radius:7,color:'#17160F',weight:2,fillColor:n.c,fillOpacity:1})
-        .addTo(map).bindPopup(n.t);
+    mainCamps.forEach(function(n){
+      L.circleMarker(n.ll,{radius:8,color:'#17160F',weight:2,fillColor:n.c,fillOpacity:1})
+        .addTo(map)
+        .bindTooltip(n.label,{permanent:true,direction:'top',className:'camp-tip',offset:[0,-10]})
+        .bindPopup(n.t);
+    });
+    var backupCamps = [
+      {ll:[48.6066,-113.8790], label:'Sprague Creek', t:'Backup Night 3 — Sprague Creek hiker/biker site (inside Glacier NP)'},
+      {ll:[48.5258,-113.9920], label:'Apgar', t:'Backup Night 3 — Apgar hiker/biker site (inside Glacier NP)'},
+      {ll:[48.4656,-114.0735], label:'Blankenship', t:'Backup Night 3 — Blankenship Bridge area (outside park)'}
+    ];
+    backupCamps.forEach(function(n){
+      L.circleMarker(n.ll,{radius:6,color:'#17160F',weight:2,dashArray:'3 3',fillColor:'#EFEBE0',fillOpacity:.8})
+        .addTo(map)
+        .bindTooltip(n.label,{permanent:true,direction:'right',className:'alt-tip',offset:[8,0]})
+        .bindPopup(n.t);
     });
     // prominent start / finish marker
     L.circleMarker([48.4111,-114.3376],{radius:11,color:'#17160F',weight:4,fillColor:'#EFEBE0',fillOpacity:1})
