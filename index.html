@@ -207,6 +207,13 @@
   .pcard .pt{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--blue);margin-bottom:8px;}
   .pcard p{margin:0;font-size:13.5px;line-height:1.5;}
   .ptags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .routeref{display:flex;align-items:center;gap:12px;margin:0 0 18px;border:2px solid var(--ink);background:var(--blue);padding:12px 15px;}
+  .routeref .rl{flex:1;}
+  .routeref .rk{font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--paper);opacity:.85;margin-bottom:3px;}
+  .routeref .rt{color:var(--paper);font-size:14.5px;font-weight:600;line-height:1.35;}
+  .routeref a.rbtn{flex-shrink:0;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:9px 13px;text-decoration:none;white-space:nowrap;}
+  .routeref a.rbtn:hover{background:var(--yellow);}
+  @media(max-width:560px){.routeref{flex-direction:column;align-items:flex-start;}}
 
   /* ---------- Bikes & price ---------- */
   .bikegrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;}
@@ -294,12 +301,20 @@
       <div class="stat"><div class="n">FCFS</div><div class="l">No resv.</div></div>
     </div>
     <p class="dates">Ride window · <b>Fri Jul 31 → Mon Aug 3</b> · fly home Tue Aug 4</p>
+    <p class="dates"><a href="park-hike-option.html">Option 2: bike in, hike more Glacier</a></p>
   </header>
 
   <!-- PITCH -->
   <section class="pitch">
     <div class="shead"><span class="k">◆</span><h2>Overview</h2><span class="rule"></span></div>
     <p class="pintro">A self-supported gravel loop from Whitefish — over Red Meadow Pass, through Glacier's North Fork, back to town. Three nights out, FCFS camping each night.</p>
+    <div class="routeref">
+      <div class="rl">
+        <div class="rk">Full route guide</div>
+        <div class="rt">Bikepacking.com's Red Meadow Pass write-up — the best overview of this loop.</div>
+      </div>
+      <a class="rbtn" href="https://bikepacking.com/routes/red-meadow-pass/" target="_blank" rel="noopener">Read the guide →</a>
+    </div>
     <div class="pgrid">
       <div class="pcard">
         <div class="pt">The effort</div>
@@ -354,11 +369,11 @@
     <div class="mapwrap"><div id="map"></div></div>
     <div class="maplegend">
       <span><i class="startswatch"></i>Start / Finish</span>
+      <span><i class="routeswatch" style="background:#2E7D46"></i>Great Divide Mtn Bike Route</span>
       <span><i class="routeswatch" style="background:#234A87"></i>In Glacier NP</span>
-      <span><i class="routeswatch" style="background:#8D8572"></i>Outside park</span>
       <span><i style="background:#CE3B22"></i>Main camp</span>
       <span><i class="altcamp"></i>Backup camp</span>
-      <span class="note">Park boundary split is approximate: Polebridge entrance into Glacier, then out near West Glacier.</span>
+      <span class="note">Highlights are approximate: the loop shares the <a href="https://bikepacking.com/plan/great-divide-mountain-bike-route-gdmbr/" target="_blank" rel="noopener">GDMBR</a> from Whitefish over Red Meadow Pass to the North Fork, then runs inside Glacier from Polebridge to West Glacier.</span>
     </div>
   </section>
 
@@ -375,15 +390,15 @@
         <figcaption><b>Forest road miles</b>The non-park side: dirt, trees, and the climb toward Red Meadow Pass. <a href="https://bikepacking.com/routes/red-meadow-pass/" target="_blank" rel="noopener">Bikepacking.com</a></figcaption>
       </figure>
       <figure class="routephoto">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Polebridge_MT.JPG/640px-Polebridge_MT.JPG" alt="Polebridge Mercantile in Polebridge Montana">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Polebridge_MT.JPG/960px-Polebridge_MT.JPG" alt="Polebridge Mercantile in Polebridge Montana">
         <figcaption><b>Polebridge</b>Bear claw stop before rolling into Glacier's North Fork. <a href="https://en.wikipedia.org/wiki/Polebridge,_Montana" target="_blank" rel="noopener">Wikimedia</a></figcaption>
       </figure>
       <figure class="routephoto">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bowman_Lake.jpg/640px-Bowman_Lake.jpg" alt="Bowman Lake in Glacier National Park">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Bowman_Lake.jpg" alt="Bowman Lake in Glacier National Park">
         <figcaption><b>Bowman Lake</b>Night 2 camp target inside Glacier National Park. <a href="https://en.wikipedia.org/wiki/Bowman_Lake_(Montana)" target="_blank" rel="noopener">Wikimedia</a></figcaption>
       </figure>
       <figure class="routephoto">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lake_McDonald_winter.jpg/640px-Lake_McDonald_winter.jpg" alt="Lake McDonald in Glacier National Park">
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lake_McDonald_winter.jpg/960px-Lake_McDonald_winter.jpg" alt="Lake McDonald in Glacier National Park">
         <figcaption><b>Lake McDonald</b>The Day 3 drop through Glacier ends around Apgar / West Glacier. <a href="https://en.wikipedia.org/wiki/Lake_McDonald" target="_blank" rel="noopener">Wikimedia</a></figcaption>
       </figure>
     </div>
@@ -430,7 +445,7 @@
       <div class="num">2</div>
       <div class="body">
         <div class="top"><span class="dow">Saturday Aug 1</span><span class="mi">~45–50 mi</span><span class="tag">Queen stage</span></div>
-        <p>Climb Red Meadow Pass (5,600 ft), long descent to the North Fork, Polebridge bear claw, into Glacier. Our big day.</p>
+        <p>Climb Red Meadow Pass (5,600 ft), long descent to the North Fork, Polebridge bear claw, into Glacier. Our big day. This climb shares a stretch of the <a href="https://bikepacking.com/plan/great-divide-mountain-bike-route-gdmbr/" target="_blank" rel="noopener">Great Divide Mountain Bike Route</a> — the Banff-to-Mexico classic runs right over Red Meadow.</p>
         <div class="camp"><b>Camp</b>Bowman Lake · first-come</div>
       </div>
     </div>
@@ -537,13 +552,16 @@
       });
       return best;
     }
+    var gdmbrEnd = nearestIndex([48.7772,-114.3029]);
     var parkStart = nearestIndex([48.7836,-114.2803]);
     var parkEnd = nearestIndex([48.4956,-113.9869]);
-    var outsideStyle = {color:'#8D8572',weight:4,opacity:.78};
+    var neutralStyle = {color:'#8D8572',weight:4,opacity:.55};
     var parkStyle = {color:'#234A87',weight:6,opacity:.95};
-    L.polyline(pts.slice(0, parkStart + 1), outsideStyle).addTo(map).bindPopup('Outside Glacier National Park');
+    var gdmbrStyle = {color:'#2E7D46',weight:6,opacity:.95};
+    L.polyline(pts.slice(0, gdmbrEnd + 1), gdmbrStyle).addTo(map).bindPopup('On the Great Divide Mountain Bike Route — Whitefish up over Red Meadow Pass to the North Fork');
+    L.polyline(pts.slice(gdmbrEnd, parkStart + 1), neutralStyle).addTo(map);
     L.polyline(pts.slice(parkStart, parkEnd + 1), parkStyle).addTo(map).bindPopup('Inside Glacier National Park');
-    L.polyline(pts.slice(parkEnd), outsideStyle).addTo(map).bindPopup('Outside Glacier National Park');
+    L.polyline(pts.slice(parkEnd), neutralStyle).addTo(map);
     var line = L.polyline(pts,{color:'#17160F',weight:1,opacity:0});
     var mainCamps = [
       {ll:[48.62,-114.55],     c:'#234A87', label:'Night 1', t:'Night 1 camp — Flathead NF (outside park)'},
