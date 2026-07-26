@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Glacier Red Meadow Loop" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Day 3 — Bowman Lake to West Glacier</name>
+    <desc>Sunday. Back down the Bowman spur past Polebridge, south through Glacier to the Night 3 camp near West Glacier. Backup sites included.</desc>
+  </metadata>
+  <wpt lat="48.8275" lon="-114.2017">
+    <name>Night 2 — Bowman Lake</name>
+    <desc>Camp Night 2, inside Glacier NP. First-come. ~6 mi spur off the North Fork Rd.</desc>
+    <type>Camp</type>
+  </wpt>
+  <wpt lat="48.76194" lon="-114.28361">
+    <name>Polebridge Mercantile</name>
+    <desc>Resupply. Famous bear claws + small store. Only resupply on route. Cash-friendly, hours vary. Passed heading to Bowman and again leaving.</desc>
+    <type>Resupply</type>
+  </wpt>
+  <wpt lat="48.4956" lon="-113.9869">
+    <name>Night 3 — West Glacier</name>
+    <desc>Camp Night 3, West Glacier area (outside park).</desc>
+    <type>Camp</type>
+  </wpt>
+  <wpt lat="48.6066" lon="-113.879">
+    <name>Backup N3 — Sprague Creek</name>
+    <desc>Backup Night 3: Sprague Creek hiker/biker site (inside Glacier NP).</desc>
+    <type>Camp</type>
+  </wpt>
+  <wpt lat="48.5258" lon="-113.992">
+    <name>Backup N3 — Apgar</name>
+    <desc>Backup Night 3: Apgar hiker/biker site (inside Glacier NP).</desc>
+    <type>Camp</type>
+  </wpt>
+  <wpt lat="48.4656" lon="-114.0735">
+    <name>Backup N3 — Blankenship</name>
+    <desc>Backup Night 3: Blankenship Bridge area (outside park).</desc>
+    <type>Camp</type>
+  </wpt>
+  <trk>
+    <name>Day 3 — Bowman Lake to West Glacier</name>
+    <trkseg>
+      <trkpt lat="48.82749" lon="-114.20454"></trkpt>
+      <trkpt lat="48.82563" lon="-114.21128"></trkpt>
+      <trkpt lat="48.82134" lon="-114.21686"></trkpt>
+      <trkpt lat="48.81596" lon="-114.22417"></trkpt>
+      <trkpt lat="48.80965" lon="-114.2349"></trkpt>
+      <trkpt lat="48.80296" lon="-114.24518"></trkpt>
+      <trkpt lat="48.79877" lon="-114.25506"></trkpt>
+      <trkpt lat="48.79806" lon="-114.25729"></trkpt>
+      <trkpt lat="48.79653" lon="-114.26025"></trkpt>
+      <trkpt lat="48.79481" lon="-114.26843"></trkpt>
+      <trkpt lat="48.79089" lon="-114.27685"></trkpt>
+      <trkpt lat="48.78788" lon="-114.28129"></trkpt>
+      <trkpt lat="48.78574" lon="-114.28059"></trkpt>
+      <trkpt lat="48.78037" lon="-114.27827"></trkpt>
+      <trkpt lat="48.7743" lon="-114.27533"></trkpt>
+      <trkpt lat="48.76765" lon="-114.27289"></trkpt>
+      <trkpt lat="48.76172" lon="-114.26784"></trkpt>
+      <trkpt lat="48.75888" lon="-114.26081"></trkpt>
+      <trkpt lat="48.7563" lon="-114.25426"></trkpt>
+      <trkpt lat="48.75011" lon="-114.25035"></trkpt>
+      <trkpt lat="48.74527" lon="-114.24538"></trkpt>
+      <trkpt lat="48.74037" lon="-114.24263"></trkpt>
+      <trkpt lat="48.73594" lon="-114.24013"></trkpt>
+      <trkpt lat="48.73255" lon="-114.2366"></trkpt>
+      <trkpt lat="48.72876" lon="-114.23288"></trkpt>
+      <trkpt lat="48.72459" lon="-114.22658"></trkpt>
+      <trkpt lat="48.72056" lon="-114.22406"></trkpt>
+      <trkpt lat="48.71527" lon="-114.21692"></trkpt>
+      <trkpt lat="48.71387" lon="-114.20997"></trkpt>
+      <trkpt lat="48.70765" lon="-114.20453"></trkpt>
+      <trkpt lat="48.70359" lon="-114.1995"></trkpt>
+      <trkpt lat="48.69853" lon="-114.19295"></trkpt>
+      <trkpt lat="48.69581" lon="-114.18593"></trkpt>
+      <trkpt lat="48.69267" lon="-114.17988"></trkpt>
+      <trkpt lat="48.6884" lon="-114.17128"></trkpt>
+      <trkpt lat="48.68294" lon="-114.15407"></trkpt>
+      <trkpt lat="48.67696" lon="-114.14744"></trkpt>
+      <trkpt lat="48.67085" lon="-114.14346"></trkpt>
+      <trkpt lat="48.66534" lon="-114.13359"></trkpt>
+      <trkpt lat="48.66383" lon="-114.12531"></trkpt>
+      <trkpt lat="48.66193" lon="-114.11749"></trkpt>
+      <trkpt lat="48.66557" lon="-114.11121"></trkpt>
+      <trkpt lat="48.6641" lon="-114.10996"></trkpt>
+      <trkpt lat="48.661" lon="-114.10746"></trkpt>
+      <trkpt lat="48.66331" lon="-114.10397"></trkpt>
+      <trkpt lat="48.66006" lon="-114.09115"></trkpt>
+      <trkpt lat="48.65547" lon="-114.07806"></trkpt>
+      <trkpt lat="48.65127" lon="-114.07012"></trkpt>
+      <trkpt lat="48.64829" lon="-114.06813"></trkpt>
+      <trkpt lat="48.64165" lon="-114.05944"></trkpt>
+      <trkpt lat="48.63758" lon="-114.05049"></trkpt>
+      <trkpt lat="48.63475" lon="-114.04489"></trkpt>
+      <trkpt lat="48.63142" lon="-114.03729"></trkpt>
+      <trkpt lat="48.62792" lon="-114.03149"></trkpt>
+      <trkpt lat="48.62413" lon="-114.02838"></trkpt>
+      <trkpt lat="48.61977" lon="-114.03281"></trkpt>
+      <trkpt lat="48.61492" lon="-114.03271"></trkpt>
+      <trkpt lat="48.60958" lon="-114.02806"></trkpt>
+      <trkpt lat="48.60484" lon="-114.0271"></trkpt>
+      <trkpt lat="48.59847" lon="-114.02728"></trkpt>
+      <trkpt lat="48.5936" lon="-114.02255"></trkpt>
+      <trkpt lat="48.58764" lon="-114.02062"></trkpt>
+      <trkpt lat="48.58427" lon="-114.02052"></trkpt>
+      <trkpt lat="48.58134" lon="-114.01752"></trkpt>
+      <trkpt lat="48.57877" lon="-114.01766"></trkpt>
+      <trkpt lat="48.57626" lon="-114.01515"></trkpt>
+      <trkpt lat="48.57241" lon="-114.01139"></trkpt>
+      <trkpt lat="48.57077" lon="-114.0046"></trkpt>
+      <trkpt lat="48.56749" lon="-113.99677"></trkpt>
+      <trkpt lat="48.56352" lon="-113.99147"></trkpt>
+      <trkpt lat="48.55856" lon="-113.98864"></trkpt>
+      <trkpt lat="48.55457" lon="-113.98969"></trkpt>
+      <trkpt lat="48.54936" lon="-113.98686"></trkpt>
+      <trkpt lat="48.5447" lon="-113.98749"></trkpt>
+      <trkpt lat="48.54198" lon="-113.99511"></trkpt>
+      <trkpt lat="48.53733" lon="-113.99996"></trkpt>
+      <trkpt lat="48.52648" lon="-113.99717"></trkpt>
+      <trkpt lat="48.52754" lon="-113.99379"></trkpt>
+      <trkpt lat="48.52825" lon="-113.99316"></trkpt>
+      <trkpt lat="48.5252" lon="-113.99474"></trkpt>
+      <trkpt lat="48.52365" lon="-113.99711"></trkpt>
+      <trkpt lat="48.50558" lon="-113.98397"></trkpt>
+      <trkpt lat="48.4993" lon="-113.98391"></trkpt>
+      <trkpt lat="48.49696" lon="-113.98368"></trkpt>
+      <trkpt lat="48.49647" lon="-113.98646"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

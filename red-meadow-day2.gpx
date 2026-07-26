@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Glacier Red Meadow Loop" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Day 2 — Night 1 to Bowman Lake</name>
+    <desc>Saturday, the queen stage. Over Red Meadow Pass (5,600 ft), down to the North Fork, Polebridge bear-claw stop, up the spur to camp at Bowman Lake.</desc>
+  </metadata>
+  <wpt lat="48.68669" lon="-114.57889">
+    <name>Upper Whitefish Lake</name>
+    <desc>Night 1 target. Flathead NF campground, water, swim. ~4,400 ft, ~20-25 mi in. Banks a chunk of Saturday's climb.</desc>
+    <type>Camp</type>
+  </wpt>
+  <wpt lat="48.7772" lon="-114.3029">
+    <name>Red Meadow Pass — 5,600 ft</name>
+    <desc>High point of the loop. Long descent to the North Fork after this.</desc>
+    <type>Summit</type>
+  </wpt>
+  <wpt lat="48.76194" lon="-114.28361">
+    <name>Polebridge Mercantile</name>
+    <desc>Resupply. Famous bear claws + small store. Only resupply on route. Cash-friendly, hours vary. Passed heading to Bowman and again leaving.</desc>
+    <type>Resupply</type>
+  </wpt>
+  <wpt lat="48.8275" lon="-114.2017">
+    <name>Night 2 — Bowman Lake</name>
+    <desc>Camp Night 2, inside Glacier NP. First-come. ~6 mi spur off the North Fork Rd.</desc>
+    <type>Camp</type>
+  </wpt>
+  <trk>
+    <name>Day 2 — Night 1 to Bowman Lake</name>
+    <trkseg>
+      <trkpt lat="48.68668" lon="-114.57472"></trkpt>
+      <trkpt lat="48.69109" lon="-114.57685"></trkpt>
+      <trkpt lat="48.69455" lon="-114.57951"></trkpt>
+      <trkpt lat="48.70054" lon="-114.58181"></trkpt>
+      <trkpt lat="48.70403" lon="-114.58278"></trkpt>
+      <trkpt lat="48.70793" lon="-114.58693"></trkpt>
+      <trkpt lat="48.71082" lon="-114.58911"></trkpt>
+      <trkpt lat="48.714" lon="-114.58976"></trkpt>
+      <trkpt lat="48.71751" lon="-114.58957"></trkpt>
+      <trkpt lat="48.72196" lon="-114.5862"></trkpt>
+      <trkpt lat="48.72474" lon="-114.58425"></trkpt>
+      <trkpt lat="48.72688" lon="-114.58196"></trkpt>
+      <trkpt lat="48.72948" lon="-114.57937"></trkpt>
+      <trkpt lat="48.73186" lon="-114.57826"></trkpt>
+      <trkpt lat="48.73331" lon="-114.57634"></trkpt>
+      <trkpt lat="48.73536" lon="-114.5734"></trkpt>
+      <trkpt lat="48.73649" lon="-114.57131"></trkpt>
+      <trkpt lat="48.73867" lon="-114.56942"></trkpt>
+      <trkpt lat="48.74187" lon="-114.57022"></trkpt>
+      <trkpt lat="48.746" lon="-114.57061"></trkpt>
+      <trkpt lat="48.74861" lon="-114.57098"></trkpt>
+      <trkpt lat="48.75086" lon="-114.57225"></trkpt>
+      <trkpt lat="48.75077" lon="-114.56983"></trkpt>
+      <trkpt lat="48.7522" lon="-114.5661"></trkpt>
+      <trkpt lat="48.75382" lon="-114.56354"></trkpt>
+      <trkpt lat="48.75673" lon="-114.56267"></trkpt>
+      <trkpt lat="48.75924" lon="-114.56191"></trkpt>
+      <trkpt lat="48.76215" lon="-114.56214"></trkpt>
+      <trkpt lat="48.7651" lon="-114.56358"></trkpt>
+      <trkpt lat="48.76702" lon="-114.56113"></trkpt>
+      <trkpt lat="48.76657" lon="-114.55947"></trkpt>
+      <trkpt lat="48.77046" lon="-114.55303"></trkpt>
+      <trkpt lat="48.77533" lon="-114.54232"></trkpt>
+      <trkpt lat="48.77516" lon="-114.53594"></trkpt>
+      <trkpt lat="48.77567" lon="-114.53039"></trkpt>
+      <trkpt lat="48.779" lon="-114.52555"></trkpt>
+      <trkpt lat="48.78211" lon="-114.52067"></trkpt>
+      <trkpt lat="48.78337" lon="-114.51576"></trkpt>
+      <trkpt lat="48.78576" lon="-114.511"></trkpt>
+      <trkpt lat="48.78844" lon="-114.50349"></trkpt>
+      <trkpt lat="48.79028" lon="-114.4968"></trkpt>
+      <trkpt lat="48.79441" lon="-114.48842"></trkpt>
+      <trkpt lat="48.79544" lon="-114.4839"></trkpt>
+      <trkpt lat="48.79749" lon="-114.47301"></trkpt>
+      <trkpt lat="48.79895" lon="-114.4648"></trkpt>
+      <trkpt lat="48.80009" lon="-114.45981"></trkpt>
+      <trkpt lat="48.80044" lon="-114.4541"></trkpt>
+      <trkpt lat="48.80102" lon="-114.4488"></trkpt>
+      <trkpt lat="48.80221" lon="-114.44335"></trkpt>
+      <trkpt lat="48.80553" lon="-114.43759"></trkpt>
+      <trkpt lat="48.80771" lon="-114.43133"></trkpt>
+      <trkpt lat="48.81045" lon="-114.42292"></trkpt>
+      <trkpt lat="48.81115" lon="-114.4172"></trkpt>
+      <trkpt lat="48.8122" lon="-114.40868"></trkpt>
+      <trkpt lat="48.81425" lon="-114.40431"></trkpt>
+      <trkpt lat="48.81684" lon="-114.39684"></trkpt>
+      <trkpt lat="48.81785" lon="-114.37843"></trkpt>
+      <trkpt lat="48.8119" lon="-114.35326"></trkpt>
+      <trkpt lat="48.8057" lon="-114.34662"></trkpt>
+      <trkpt lat="48.79313" lon="-114.33394"></trkpt>
+      <trkpt lat="48.78449" lon="-114.32633"></trkpt>
+      <trkpt lat="48.78198" lon="-114.31587"></trkpt>
+      <trkpt lat="48.77719" lon="-114.30293"></trkpt>
+      <trkpt lat="48.77163" lon="-114.30419"></trkpt>
+      <trkpt lat="48.76989" lon="-114.29746"></trkpt>
+      <trkpt lat="48.77608" lon="-114.27982"></trkpt>
+      <trkpt lat="48.78376" lon="-114.28028"></trkpt>
+      <trkpt lat="48.7872" lon="-114.28127"></trkpt>
+      <trkpt lat="48.78955" lon="-114.27956"></trkpt>
+      <trkpt lat="48.79288" lon="-114.27306"></trkpt>
+      <trkpt lat="48.79637" lon="-114.26406"></trkpt>
+      <trkpt lat="48.79727" lon="-114.25872"></trkpt>
+      <trkpt lat="48.7976" lon="-114.25576"></trkpt>
+      <trkpt lat="48.79998" lon="-114.25006"></trkpt>
+      <trkpt lat="48.80585" lon="-114.24084"></trkpt>
+      <trkpt lat="48.81463" lon="-114.22805"></trkpt>
+      <trkpt lat="48.81915" lon="-114.2197"></trkpt>
+      <trkpt lat="48.82521" lon="-114.21384"></trkpt>
+      <trkpt lat="48.82525" lon="-114.20883"></trkpt>
+      <trkpt lat="48.82749" lon="-114.20454"></trkpt>
+    </trkseg>
+  </trk>
+</gpx>
