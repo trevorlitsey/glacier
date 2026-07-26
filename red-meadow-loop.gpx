@@ -2,7 +2,7 @@
 <gpx version="1.1" creator="Glacier Red Meadow Loop" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
     <name>Red Meadow Loop — Glacier NP Bikepacking</name>
-    <desc>~116 mi self-supported gravel loop from Whitefish over Red Meadow Pass through Glacier NP. Route, campsites (main + backup), and points of interest.</desc>
+    <desc>~116 mi self-supported gravel loop from Whitefish over Red Meadow Pass through Glacier NP. Full route, campsites (main + backup), and points of interest.</desc>
   </metadata>
   <wpt lat="48.4111" lon="-114.3376">
     <name>Start / Finish — Whitefish</name>
@@ -26,12 +26,12 @@
   </wpt>
   <wpt lat="48.76194" lon="-114.28361">
     <name>Polebridge Mercantile</name>
-    <desc>Day 2 resupply. Famous bear claws + small store. Only resupply on route. Cash-friendly, hours vary.</desc>
+    <desc>Resupply. Famous bear claws + small store. Only resupply on route. Cash-friendly, hours vary. Passed heading to Bowman and again leaving.</desc>
     <type>Resupply</type>
   </wpt>
   <wpt lat="48.8275" lon="-114.2017">
     <name>Night 2 — Bowman Lake</name>
-    <desc>Camp Night 2, inside Glacier NP. First-come.</desc>
+    <desc>Camp Night 2, inside Glacier NP. First-come. ~6 mi spur off the North Fork Rd.</desc>
     <type>Camp</type>
   </wpt>
   <wpt lat="48.4956" lon="-113.9869">
@@ -55,7 +55,7 @@
     <type>Camp</type>
   </wpt>
   <trk>
-    <name>Red Meadow Loop</name>
+    <name>Red Meadow Loop — Glacier NP Bikepacking</name>
     <trkseg>
       <trkpt lat="48.4108" lon="-114.33748"></trkpt>
       <trkpt lat="48.41511" lon="-114.33844"></trkpt>
